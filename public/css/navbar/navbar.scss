@@ -1,0 +1,67 @@
+.container {
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+
+        h1 {
+            font-size: 22px;
+            margin: 0;
+            margin-left: 10px;
+            transition: all 200ms;
+        }
+
+        h1:hover {
+            text-shadow: 0px 0px 4px #222;
+        }
+
+        @media (max-width: 767.5px) {
+            h1 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    #navbarSupportedContent {
+        ul {
+            li {
+                a {
+                    transition: all 200ms;
+                }
+
+                a:hover {
+                    text-shadow: 1px 2px 2px #222;
+                }
+
+                .hover-scale:hover {
+                    transform: scale(1.1);
+                }
+
+                #theme {
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .screen-md {
+                display: none;
+            }
+
+            @media (max-width: 1200px) {
+                .screen-lg {
+                    display: none;
+                }
+            }
+
+            @media (max-width: 767.5px) {
+                .dropdown {
+                    display: none;
+                }
+
+                .screen-md {
+                    display: block;
+                }
+            }
+        }
+    }
+}

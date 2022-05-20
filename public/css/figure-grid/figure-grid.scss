@@ -1,0 +1,27 @@
+#figure-grid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .card {
+        height: 25rem;
+
+        .card-body {
+            pre {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 996px) {
+    #figure-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 770px) {
+    #figure-grid {
+        grid-template-columns: 1fr;
+    }
+}

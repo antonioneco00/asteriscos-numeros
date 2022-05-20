@@ -1,0 +1,123 @@
+.btn-grad {
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border: none;
+  border-radius: 30px;
+}
+
+.btn-grad-md {
+  display: block;
+  width: 12rem;
+  padding: 15px 45px;
+  margin: 10px auto;
+}
+
+.btn-grad-sm {
+  width: 6rem;
+  padding: 5px 0;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+}
+
+.btn-grad-light {
+  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+}
+
+.btn-grad-dark {
+  background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+}
+
+.image-container {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  border-radius: 15px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+}
+
+.container .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.container .navbar-brand h1 {
+  font-size: 22px;
+  margin: 0;
+  margin-left: 10px;
+  transition: all 200ms;
+}
+.container .navbar-brand h1:hover {
+  text-shadow: 0px 0px 4px #222;
+}
+.container #navbarSupportedContent ul li a {
+  transition: all 200ms;
+}
+.container #navbarSupportedContent ul li a:hover {
+  text-shadow: 1px 2px 2px #222;
+}
+.container #navbarSupportedContent ul li .hover-scale:hover {
+  transform: scale(1.1);
+}
+
+@font-face {
+  font-family: "Consolas";
+  src: url("../font/consolas.ttf");
+}
+a {
+  text-decoration: none;
+}
+
+.icon {
+  display: none;
+}
+
+body {
+  background: #cad5f4;
+  background: -moz-linear-gradient(135deg, #cad5f4 0%, #2fc0ff 100%);
+  background: -webkit-linear-gradient(135deg, #cad5f4 0%, #2fc0ff 100%);
+  background: linear-gradient(135deg, #cad5f4 0%, #2fc0ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cad5f4",endColorstr="#2fc0ff",GradientType=1);
+}
+body #app #welcome {
+  padding: 200px;
+}
+body #app .wave {
+  overflow: hidden;
+}
+body #app div .welcome-text-div {
+  width: 500px;
+}
+body #app div .welcome-text-div h1 {
+  margin: 0;
+}
+body #app div .welcome-text-div .lead {
+  font-size: 30px;
+}
+body #app #tutorial {
+  background-color: #fff;
+}
+body #app #tutorial #tutorial-table {
+  width: 500px;
+}
+body #app .wave-rotate {
+  transform: scaleX(1) scaleY(-1);
+}
+body #app .wave-dark {
+  transform: scaleX(-1);
+}
+body #app #footer {
+  background-color: #000;
+}
+body #app #footer h1 {
+  text-align: end;
+  margin-right: 40px;
+}
+
+/*# sourceMappingURL=welcome.css.map */

@@ -1,0 +1,134 @@
+#welcome-body {
+    display: block;
+    background: rgb(202,213,244);
+    background: -moz-linear-gradient(135deg, rgba(202,213,244,1) 00%, rgba(47,192,255,1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(202,213,244,1) 00%, rgba(47,192,255,1) 100%);
+    background: linear-gradient(135deg, rgba(202,213,244,1) 00%, rgba(47,192,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cad5f4",endColorstr="#2fc0ff",GradientType=1);
+
+    #app {
+        nav {
+            .icon {
+                display: none;
+            }
+        }
+
+        #welcome {
+            height: 90vh;
+        }
+
+        .wave {
+            position: relative;
+            top: 2px;
+            overflow: hidden;
+
+            img {
+                width: 100vw;
+            }
+        }
+
+        div {
+            .welcome-text-div {
+                width: 500px;
+
+                h1 {
+                    margin: 0;
+                }
+
+                .lead {
+                    font-size: 30px;
+                }
+            }
+
+            #tutorial-table {
+                width: 500px;
+            }
+        }
+
+        #tutorial {
+            background-color: #fff;
+        }
+
+        .wave-rotate {
+            transform: scaleX(1) scaleY(-1);
+            top: -2px;
+        }
+
+        .wave-dark {
+            transform: scaleX(-1);
+        }
+
+        #footer {
+            background-color: #000;
+
+            h1 {
+                text-align: end;
+                margin-right: 40px;
+            }
+        }
+
+        @media (max-width: 1076px) {
+            div {
+                .welcome-text-div {
+                    .display-3,
+                    .lead,
+                    .btn-grad {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .display-3 {
+                        margin-top: 2.5rem;
+                    }
+                }
+            }
+            
+            #tutorial {
+                flex-direction: column;
+
+                #tutorial-table {
+                    .table {
+                        margin: 0 auto;
+                        margin-bottom: 2.5rem;
+                    }
+                }
+            }
+
+            .wave-rotate {
+                transform: scaleX(-1) scaleY(-1);
+                top: -2px;
+            }
+
+            #footer {
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        @media (max-width: 600px) {
+            div {
+                .welcome-text-div {
+                    .lead {
+                        font-size: 25px;
+                    }
+                }
+
+                .welcome-text-div,
+                #tutorial-table {
+                    width: 80vw;
+
+                    .table {
+                        width: 80vw;
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            #footer {
+                h1 {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

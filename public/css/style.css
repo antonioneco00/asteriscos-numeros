@@ -1,0 +1,374 @@
+#welcome-body {
+  display: block;
+  background: #cad5f4;
+  background: -moz-linear-gradient(135deg, #cad5f4 0%, #2fc0ff 100%);
+  background: -webkit-linear-gradient(135deg, #cad5f4 0%, #2fc0ff 100%);
+  background: linear-gradient(135deg, #cad5f4 0%, #2fc0ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cad5f4",endColorstr="#2fc0ff",GradientType=1);
+}
+#welcome-body #app nav .icon {
+  display: none;
+}
+#welcome-body #app #welcome {
+  height: 90vh;
+}
+#welcome-body #app .wave {
+  position: relative;
+  top: 2px;
+  overflow: hidden;
+}
+#welcome-body #app .wave img {
+  width: 100vw;
+}
+#welcome-body #app div .welcome-text-div {
+  width: 500px;
+}
+#welcome-body #app div .welcome-text-div h1 {
+  margin: 0;
+}
+#welcome-body #app div .welcome-text-div .lead {
+  font-size: 30px;
+}
+#welcome-body #app div #tutorial-table {
+  width: 500px;
+}
+#welcome-body #app #tutorial {
+  background-color: #fff;
+}
+#welcome-body #app .wave-rotate {
+  transform: scaleX(1) scaleY(-1);
+  top: -2px;
+}
+#welcome-body #app .wave-dark {
+  transform: scaleX(-1);
+}
+#welcome-body #app #footer {
+  background-color: #000;
+}
+#welcome-body #app #footer h1 {
+  text-align: end;
+  margin-right: 40px;
+}
+@media (max-width: 1076px) {
+  #welcome-body #app div .welcome-text-div .display-3,
+#welcome-body #app div .welcome-text-div .lead,
+#welcome-body #app div .welcome-text-div .btn-grad {
+    margin-bottom: 1.5rem;
+  }
+  #welcome-body #app div .welcome-text-div .display-3 {
+    margin-top: 2.5rem;
+  }
+  #welcome-body #app #tutorial {
+    flex-direction: column;
+  }
+  #welcome-body #app #tutorial #tutorial-table .table {
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+  #welcome-body #app .wave-rotate {
+    transform: scaleX(-1) scaleY(-1);
+    top: -2px;
+  }
+  #welcome-body #app #footer h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  #welcome-body #app div .welcome-text-div .lead {
+    font-size: 25px;
+  }
+  #welcome-body #app div .welcome-text-div,
+#welcome-body #app div #tutorial-table {
+    width: 80vw;
+  }
+  #welcome-body #app div .welcome-text-div .table,
+#welcome-body #app div #tutorial-table .table {
+    width: 80vw;
+    font-size: 10px;
+  }
+  #welcome-body #app #footer h1 {
+    font-size: 0.8rem;
+  }
+}
+
+.btn-grad {
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border: none;
+  border-radius: 30px;
+}
+
+.btn-grad-md {
+  display: block;
+  width: fit-content;
+  text-transform: uppercase;
+  padding: 15px 45px;
+  margin: 10px auto;
+}
+
+.btn-grad-sm {
+  padding: 0.25rem 1rem;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+}
+
+.btn-grad-light {
+  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+  box-shadow: 0 0 20px #eee;
+}
+
+.btn-grad-dark {
+  background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+}
+
+.image-container {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 15px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+}
+
+.container .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.container .navbar-brand h1 {
+  font-size: 22px;
+  margin: 0;
+  margin-left: 10px;
+  transition: all 200ms;
+}
+.container .navbar-brand h1:hover {
+  text-shadow: 0px 0px 4px #222;
+}
+@media (max-width: 767.5px) {
+  .container .navbar-brand h1 {
+    font-size: 18px;
+  }
+}
+.container #navbarSupportedContent ul li a {
+  transition: all 200ms;
+}
+.container #navbarSupportedContent ul li a:hover {
+  text-shadow: 1px 2px 2px #222;
+}
+.container #navbarSupportedContent ul li .hover-scale:hover {
+  transform: scale(1.1);
+}
+.container #navbarSupportedContent ul li #theme img {
+  cursor: pointer;
+}
+.container #navbarSupportedContent ul .screen-md {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .container #navbarSupportedContent ul .screen-lg {
+    display: none;
+  }
+}
+@media (max-width: 767.5px) {
+  .container #navbarSupportedContent ul .dropdown {
+    display: none;
+  }
+  .container #navbarSupportedContent ul .screen-md {
+    display: block;
+  }
+}
+
+#figure-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#figure-grid .card {
+  height: 25rem;
+}
+#figure-grid .card .card-body pre {
+  margin: 0;
+}
+
+@media (max-width: 996px) {
+  #figure-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 770px) {
+  #figure-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@font-face {
+  font-family: "Consolas";
+  src: url("../../font/consolas.ttf");
+}
+.consolas {
+  font-family: "Consolas", Verdana, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.light-blue {
+  background-color: #e3f2fd;
+}
+
+.icon {
+  width: 30px;
+}
+
+.bg-light-grad {
+  background: #cad5f4;
+  background: -moz-linear-gradient(0deg, #cad5f4 0%, #2fc0ff 100%);
+  background: -webkit-linear-gradient(0deg, #cad5f4 0%, #2fc0ff 100%);
+  background: linear-gradient(0deg, #cad5f4 0%, #2fc0ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cad5f4",endColorstr="#2fc0ff",GradientType=1);
+}
+
+body {
+  display: none;
+  background-image: url("../img/pattern.svg");
+  background-size: 15%;
+}
+body #app main .container .row .col-md-10 .card .card-body #tutorial-header {
+  margin-top: 0;
+}
+body #app main .container .row .col-md-10 .card .card-body h2,
+body #app main .container .row .col-md-10 .card .card-body .table-header {
+  margin-top: 2rem;
+}
+body #app main .container .row .col-md-10 .card .card-body .container {
+  margin-bottom: 1rem;
+}
+body #app main .container .row .col-md-10 .card .card-body .container .row .col-sm .code {
+  text-align: left;
+}
+body #app main .container .row .col-md-10 .card .card-body .container .row .figure-container .figure {
+  height: 100%;
+  font-size: 1.2rem;
+}
+body #app main .container .row .col-md-10 .card .card-body .table {
+  margin-bottom: 2rem;
+}
+body #app main .container .row .col-md-10 .card .card-body form .image {
+  width: 55px;
+}
+@media (max-width: 600px) {
+  body #app main .container .row .col-md-10 .card .card-body .container .row {
+    flex-direction: column;
+  }
+  body #app main .container .row .col-md-10 .card .card-body .container .row .figure-container {
+    margin-top: 1rem;
+  }
+  body #app main .container .row .col-md-10 .card .card-body .container .row .col-sm div {
+    margin-top: 1rem;
+  }
+  body #app main .container .row .col-md-10 .card .card-body .table,
+body #app main .container .row .col-md-10 .card .card-body .container .row .col-sm .code {
+    font-size: 10px;
+  }
+}
+body #app main .container .row .col-md-12 .first-capitalize::first-letter {
+  text-transform: uppercase;
+}
+@media (max-width: 490px) {
+  body #app main .container .row .col-md-12 .form {
+    text-align: center;
+  }
+  body #app main .container .row .col-md-12 .form .form-select {
+    text-align: center;
+    padding-left: 2.25rem;
+    margin: 0.5rem 0;
+  }
+}
+body #app main .container .row .col-md-12 .card .card-header .edit img {
+  width: 30px;
+}
+body #app main .container .row .col-md-12 .card .card-header a {
+  margin: auto;
+}
+body #app main .container .row .col-md-12 .card .card-header .delete img {
+  width: 30px;
+}
+body #app main .container .row .col-md-12 .card #detail-container #figure-container,
+body #app main .container .row .col-md-12 .card #detail-container #code-container {
+  width: 50%;
+}
+body #app main .container .row .col-md-12 .card #detail-container #figure-container pre {
+  margin: 0;
+}
+body #app main .container .row .col-md-12 .card #detail-container #code-container #code {
+  border-left: 1px dashed #ccc;
+  overflow-x: scroll;
+  white-space: nowrap;
+  max-height: 23.5rem;
+}
+body #app main .container .row .col-md-12 .card #footers {
+  height: 50px;
+  font-size: 18px;
+}
+body #app main .container .row .col-md-12 .card #footers a {
+  color: #212529;
+}
+body #app main .container .row .col-md-12 .card #footers a p {
+  margin: 0;
+}
+body #app main .container .row .col-md-12 .card #footers a img {
+  width: 22px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+}
+body #app main .container .row .col-md-12 .card .card-footer .btn-like-index {
+  cursor: pointer;
+}
+body #app main .container .row .col-md-12 .card .card-footer .btn-like-index img {
+  width: 30px;
+}
+@media (max-width: 767.5px) {
+  body #app main .container .row .col-md-12 .card #detail-container {
+    flex-direction: column;
+  }
+  body #app main .container .row .col-md-12 .card #detail-container #figure-container,
+body #app main .container .row .col-md-12 .card #detail-container #code-container {
+    width: 100%;
+  }
+  body #app main .container .row .col-md-12 .card #detail-container #figure-container pre {
+    margin: 2rem 0;
+  }
+  body #app main .container .row .col-md-12 .card #detail-container #code-container #code {
+    border: none;
+  }
+  body #app main .container .row .col-md-12 .card #footers {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+}
+body #app main .container .row .col-md-12 span {
+  text-align: center;
+}
+body #app main .container .row .col-md-12 span nav a {
+  color: #0dcaf0;
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-size: 20%;
+  }
+}
+@media (max-width: 767.5px) {
+  body {
+    background-size: 32%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,246 @@
+// Importaciones
+
+@use 'welcome/welcome.scss';
+@use 'gradient-button/gradient-button.scss';
+@use 'image-container/image-container.scss';
+@use 'navbar/navbar.scss';
+@use 'figure-grid/figure-grid.scss';
+@use 'consolas/consolas.scss';
+
+// Estilos generales
+
+a {
+    text-decoration: none;
+}
+
+.light-blue {
+    background-color: #e3f2fd;
+}
+
+.icon {
+    width: 30px;
+}
+
+.bg-light-grad {
+    background: rgb(202,213,244);
+    background: -moz-linear-gradient(0deg, rgba(202,213,244,1) 00%, rgba(47,192,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(202,213,244,1) 00%, rgba(47,192,255,1) 100%);
+    background: linear-gradient(0deg, rgba(202,213,244,1) 00%, rgba(47,192,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cad5f4",endColorstr="#2fc0ff",GradientType=1);
+}
+
+body {
+    display: none;
+    background-image: url('../img/pattern.svg');
+    background-size: 15%;
+
+    #app {
+        main {
+            .container {
+                .row {
+                    .col-md-10 {
+                        .card {
+                            .card-body {
+                                #tutorial-header {
+                                    margin-top: 0;
+                                }
+
+                                h2,
+                                .table-header {
+                                    margin-top: 2rem;
+                                }
+
+                                .container {
+                                    margin-bottom: 1rem;
+
+                                    .row {
+                                        .col-sm {
+                                            .code {
+                                                text-align: left;
+                                            }
+                                        }
+
+                                        .figure-container {
+                                            .figure {
+                                                height: 100%;
+                                                font-size: 1.2rem;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .table {
+                                    margin-bottom: 2rem;
+                                }
+
+                                form {
+                                    .image {
+                                        width: 55px;
+                                    }
+                                }
+
+                                @media (max-width: 600px) {
+                                    .container .row {
+                                        flex-direction: column;
+                                    }
+
+                                    .container .row .figure-container {
+                                        margin-top: 1rem;
+                                    }
+
+                                    .container .row .col-sm div {
+                                        margin-top: 1rem;
+                                    }
+
+                                    .table,
+                                    .container .row .col-sm .code {
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .col-md-12 {
+                        .first-capitalize::first-letter {
+                            text-transform: uppercase;
+                        }
+
+                        @media (max-width: 490px) {
+                            .form {
+                                text-align: center;
+
+                                .form-select {
+                                    text-align: center;
+                                    padding-left: 2.25rem;
+                                    margin: 0.5rem 0;
+                                }
+                            }
+                        }
+
+                        .card {
+                            .card-header {
+                                .edit {
+                                    img {
+                                        width: 30px;
+                                    }
+                                }
+
+                                a {
+                                    margin: auto;
+                                }
+
+                                .delete {
+                                    img {
+                                        width: 30px;
+                                    }
+                                }
+                            }
+
+                            #detail-container {
+                                #figure-container,
+                                #code-container {
+                                    width: 50%;
+                                }
+
+                                #figure-container {
+                                    pre {
+                                        margin: 0;
+                                    }
+                                }
+
+                                #code-container {
+                                    #code {
+                                        border-left: 1px dashed #ccc;
+                                        overflow-x: scroll;
+                                        white-space: nowrap;
+                                        max-height: 23.5rem;
+                                    }
+                                }
+                            }
+
+                            #footers {
+                                height: 50px;
+                                font-size: 18px;
+
+                                a {
+                                    color: #212529;
+
+                                    p {
+                                        margin: 0;
+                                    }
+
+                                    img {
+                                        width: 22px;
+                                        margin-bottom: 4px;
+                                        margin-left: 4px;
+                                    }
+                                }
+                            }
+
+                            .card-footer {                                
+                                .btn-like-index {
+                                    cursor: pointer;
+                                    
+                                    img {
+                                        width: 30px;
+                                    }
+                                }
+                            }
+
+                            @media (max-width: 767.5px) {
+                                #detail-container {
+                                    flex-direction: column;
+
+                                    #figure-container,
+                                    #code-container {
+                                        width: 100%;
+                                    }
+
+                                    #figure-container {
+                                        pre {
+                                            margin: 2rem 0;
+                                        }
+                                    }
+                                    
+                                    #code-container {
+                                        #code {
+                                            border: none;
+                                        }
+                                    }
+                                }
+
+                                #footers {
+                                    height: auto;
+                                    flex-direction: column-reverse;
+                                }
+                            }
+                        }
+
+                        span {
+                            text-align: center;
+
+                            nav {
+                                a {
+                                    color: #0dcaf0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-size: 20%;
+    }
+}
+
+@media (max-width: 767.5px) {
+    body {
+        background-size: 32%;
+    }
+}
