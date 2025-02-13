@@ -1,0 +1,13 @@
+en:
+  title: Asterisks & numbers
+  description: >
+    A full-stack web application built with Laravel for the back-end and jQuery for the front-end, styled with Bootstrap. 
+    This platform teaches users how to create geometric shapes using PHP programming logic. You can generate squares, triangles, diamonds, and more. 
+    To create a shape, you need to sign up and submit your PHP code. The generated shape will then be displayed in the list of figures.  
+
+es:
+  title: Asteriscos y números
+  description: >
+    Una aplicación web Full-Stack desarrollada con Laravel en el back-end y jQuery en el front-end, utilizando Bootstrap para los estilos. 
+    La plataforma permite aprender a crear figuras geométricas mediante la lógica de programación en PHP. Se pueden generar cuadrados, triángulos, rombos y más. 
+    Para crear una figura, es necesario registrarse y subir el código en PHP. La figura generada se mostrará en la lista de figuras.  
